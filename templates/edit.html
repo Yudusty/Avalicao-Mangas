@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- html -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Editando os Filmes</title>
+    <!-- Começo Html -->
+</head><h4>Faça a sua mudança.</h4>
+<body> 
+    <div class="container">
+        <form action="/saveEdit" method="post">
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" name="name" class="form-control" value={{lista[1]}} />
+            </div>
+            <div class="form-group">
+                <label>Avaliação</label>
+                <input type="text" name="avaliacao" required="true"  class="form-control" value={{lista[2]}} />
+            </div>
+            <div class="form-group" style="z-index: -1;">
+                <label>id</label>
+                <input type="text" name="Id" class="form-control" value={{lista[0]}} />
+            </div>
+            <br>
+            <button class="btn btn-primary" style="margin-top: 20px">Editar</button>
+        </form>
+    </div>
+</body>
+</html>
