@@ -19,16 +19,26 @@
 
 <!-- Inputs -->
 <body class="p-3 mb-2 bg-dark text-white">
+
+    <!-- Espassamento -->
     <div class="container">
+
+        <!-- @app.route('/edit/<id>/<name>/<avaliacao>') -->
         <form action="/saveEdit" method="post" class="d-grid gap-2">
+
+            <!-- Onde pode modificar o dado "name" -->
             <div class="form-group" style="text-align:center"><p style="margin-top: 40px"></p>
                 <label><p class="badge bg-warning text-wrap" style="width: 5rem;"><b class="fs-5"><c class="text-dark">Nome</c></b></p></label>
                 <input type="text" name="name" class="form-control" value={{lista[1]}} />
             </div>
+            
+            <!-- Onde pode modificar o dado "avaliacao" -->
             <div class="form-group" style="text-align:center"><p style="margin-top: 20px"></p>
                 <label><p class="badge bg-primary text-wrap" style="width: 7rem;"><b class="fs-5"><c class="text-dark">Avaliação</c></b></p></label>
                 <input type="text" name="avaliacao" required="true"  class="form-control" value={{lista[2]}} />
             </div>
+
+            <!-- Onde pode modificar o dado "Id" -->
             <div class="form-group" style="text-align:center"><p style="margin-top: 30px"></p>
                 <label><p class="badge bg-danger text-wrap" style="width: 3rem;"><b class="fs-5"><c class="text-dark">Id</c></b></p></label>
                 <input type="text" name="Id" class="form-control" value={{lista[0]}} />
