@@ -7,21 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Registrando filmes</title>
+    <title>Registrando Mangás</title>
     <!-- Começo Html -->
-</head><h4>Registrando Filmes</h4>
-<body> 
+</head><h4 class="text-center" style="margin-top: 50px"><p class="badge bg-light text-wrap" style="width: 20rem;"><b class="fs-1"><c class="text-dark">Registrando Mangás</c></b></p></h4>
+<body class="p-3 mb-2 bg-dark text-white"> 
     <div class="container">
-        <form action="/save" method="POST">
-            <div class="form-group">
-                <label>Nome</label>
-                <input type="text" name="name" class="form-control"/>
+        <form action="/save" method="POST" class="d-grid gap-2">
+            <div class="form-group" style="text-align:center"><p style="margin-top: 40px"></p>
+                <label><p class="badge bg-warning text-wrap" style="width: 5rem;"><b class="fs-5"><c class="text-dark">Nome</c</b></p></label>
+                <input type="text" name="name" class="form-control" placeholder="Insira o nome do Mangá" required/>
             </div>
-            <div class="form-group">
-                <label>Avaliação</label>
-                <input type="text" name="avaliacao" required="true"  class="form-control"/>
+            <div class="form-group" style="text-align:center"><p style="margin-top: 20px"></p>
+                <label><p class="badge bg-primary text-wrap" style="width: 7rem;"><b class="fs-5"><c class="text-dark">Avaliação</c</b></p></label>
+                <input type="text" name="avaliacao" required="true"  class="form-control" placeholder="Insira sua avaliação" required/>
             </div>
-            <button class="btn btn-primary" style="margin-top: 20px">Salvar</button>
+            <div class="d-grid gap-2">
+                <button class="btn btn-success btn-lg" style="margin-top: 20px">Salvar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+  <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z"/>
+</svg></button>
+            </div>
         </form>
     </div>
 </body>
