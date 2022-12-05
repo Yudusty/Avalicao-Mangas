@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <!-- html -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Editando os Mangás</title>
+
     <!-- Começo Html -->
-</head><h4 class="text-center" style="margin-top: 50px"><p class="badge bg-light text-wrap" style="width: 15rem;"><b class="fs-1"><c class="text-dark">Faça a sua mudança</c></b></p></h4>
+</head>
+
+    <!-- Título -->
+    <h4 class="text-center" style="margin-top: 50px"><p class="badge bg-light text-wrap" style="width: 15rem;"><b class="fs-1"><c class="text-dark">Faça a sua mudança</c></b></p></h4>
+
+<!-- Inputs -->
 <body class="p-3 mb-2 bg-dark text-white">
     <div class="container">
         <form action="/saveEdit" method="post" class="d-grid gap-2">
@@ -26,6 +34,8 @@
                 <input type="text" name="Id" class="form-control" value={{lista[0]}} />
             </div>
             <br>
+
+            <!-- Botão Editar -->
             <div class="d-grid gap-2">
                 <button class="btn btn-primary btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brush-fill" viewBox="0 0 16 16">
                     <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04z"/>
